@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW5 Ex2</title>
+    <link rel="stylesheet" href="CW5_ex2.css">
+</head>
+<body>
+    <h1 class="resultado"> 
+        <center>
+            <script>
+                function cakes(recipe, ingredients) {
+                    let minimo = [];
+                    for (const elem in recipe) {
+                        if (elem in ingredients) {
+                            if (Math.floor(ingredients[elem] / recipe[elem]) >= 1) {
+                                minimo.push(Math.floor(ingredients[elem] / recipe[elem]));
+                            }
+                        } else {
+                            document.write("<br>");
+                            document.write("<br>");
+                            document.write("Podrà fer 0 pastissos");
+                            break;
+                        }
+                    } 
+                    if (minimo.length > 0) {
+                        document.write("Podrà fer " + Math.min(...minimo) + " pastissos");
+                    }
+                }
+            
+                cakes({"flour": 500, "sugar": 200, "eggs": 1}, {"flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200});
+                cakes({"apples": 3, "flour": 300, "sugar": 150, "milk": 100, "oil": 100}, {"sugar": 500, "flour": 2000, "milk": 2000});
+            </script>
+        </center>
+    </h1>
+    <center>
+        <div>
+            <a href="ex2.py" class="py">Codi amb Python</a>
+        </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    background: blue;
+    animation: colores 15s infinite;
+}
+h1 {
+    text-align: center;
+    font-size: 75px;
+}
+.cont1 {
+    background-color: crimson;
+    color: white;
+    padding: 25px 25px;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    border-radius: 25px;
+    border: 5px solid black;
+    animation-duration: 10s;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+}
+.cont1 .cont2 {
+    visibility: hidden;
+    width: 300px;
+    height: 75px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0px;
+    position: absolute;
+    top: 220px;
+    left: 80%;
+    margin-left: -60px;
+    z-index: 1;
+    font-size: 26px ;
+}
+.cont1 .cont2::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black;
+}
+.cont1:hover .cont2 {
+    visibility: visible;
+    color: white;
+}
+span a:link {color: white;}
+span a:visited {color: white;}
+span a:active {color: yellow;}
+
+@keyframes fondo {
+    0%{
+        background-color: crimson; 
+        color: white;
+    }
+    25% {
+        background-color: rgb(255, 115, 115);
+        color: black;
+    }
+    50%{
+        background-color: red;
+        color: black;
+    }
+    75%{
+        background-color: rgb(255, 115, 115);
+        color: black;
+    }
+    100% {
+        background-color: crimson;
+        color: white;
+    }
+}
+@keyframes colores {
+    0% {
+        background-color: blue;
+    }
+    12.5% {
+        background-color: aqua;
+    }
+    25% {
+        background-color: white;
+    }
+    37.5% {
+        background-color: yellowgreen;
+    }
+    50% {
+        background-color: yellow;
+    }
+    62.5% {
+        background-color: white;
+    }
+    75% {
+        background-color: crimson;
+    }
+    87.5% {
+        background-color: red;
+    }
+    95% {
+        background-color: white;
+    }
+    100% {
+        background-color: lightskyblue;
+    }
+}
+h1 a {color: black;}
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 30px;
+    }   
+    .cont1 {
+        width: 150px;
+        height: 100px;
+        margin: 0;
+    }
+    .cont1 .cont2 {
+        width: 75px;
+        height: 65px;
+        font-size: 15px;
+        top: 145px;
+        left: 100%;
+        margin-left: -60px;
+    }
+}
+@media screen and (max-width: 215px) {
+    h1 {
+        font-size: 25px;
+    }
+    .ex1 {
+        font-size: 30px;
+    }
+    .cont1 {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    .cont1 .cont2 {
+        width: 65px;
+        height: 100px;
+        font-size: 15px;
+        top: 100px;
+        right: 55%;
+    }
+}

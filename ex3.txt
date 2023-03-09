@@ -1,0 +1,6 @@
+3. Fes una definició breu dels conceptes següents i per a que els usaries:
+
+- Classe:   S'utilitzen per agrupar atributs i mètodes
+- Objecte:  Qualsevol cosa que te unes caracteístiques
+- Mètode:   Són les variables
+- Atribut:  Són les accions

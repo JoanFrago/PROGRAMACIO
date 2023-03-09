@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripcion" content="Exercici 1 projecte 4 CodeWars">
+    <meta name="creadores" content="Ins Banús">
+    <meta name="keywords" content="GPU, exercici, ">
+    <title>Ex 1</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+    <body>
+        <h1 class="ex1"><a href="https://v16-webapp.tiktok.com/4447da30914fc76f7a22d71310db6b9f/63c56876/video/tos/useast2a/tos-useast2a-ve-0068c003/0a87cfc4dba54d26808ba2f897933784/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=606&bt=303&cs=0&ds=3&ft=4b~OyMUm8Zmo0M-8864jVyq_JpWrKsdm&mime_type=video_mp4&qs=0&rc=NzszaGQ1NDQ1Ojc2Zjc1aEBpam9xcGU6Zm94PDMzNzczM0AyMC9jXjVgNmExYTEzYC1gYSNvZW9vcjQwMm5gLS1kMTZzcw%3D%3D&l=20230116090800F7EDE46E35C733018489&btag=80000" target="_blank">Exercici 1</a></h1>
+        <center>
+            <div class="cont1">
+                <h1 class="respuesta">
+                    <script class="js">
+                        let gpuFrequency = parseInt(prompt('Freqüència del teu GPU:'));
+                        let counter = 0;
+                        let gameFrequency = parseInt(prompt('Freqüència del joc:'));
+
+                        while (gameFrequency !== 0) {
+                            if (gpuFrequency >= gameFrequency) {
+                                counter++;
+                            }
+                        gameFrequency = parseInt(prompt('Freqüència del joc:'));
+                        }
+                        //console.log(`funcionen ${counter} jocs`);
+                        document.write(`Funcionen ${counter} jocs`).style.fontSize = 300;
+                    </script>
+                </h1>
+                <div class="cont2">
+                    <span><a href="ex1.py" target="_blank">Vols veure el programa fet en Python?</a></span>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: white
+}
+.titulo {
+    color: orange;
+    font-size: 30px;
+    margin-left: 10px;
+}
+#kids {
+    color: rgb(0, 153, 255);
+    font-size: 30px;
+}
+.asidenav {
+    width: 300px;
+    border: 3px solid white;
+}
+#parati {
+    width: 900px;
+    height: 500px;
+    border: 3px solid white;
+    position: absolute;
+    left: 350px;
+    top: 0%;
+    display: block;
+}

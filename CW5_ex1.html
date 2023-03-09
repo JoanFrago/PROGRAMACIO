@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 1 CW 5</title>
+</head>
+<body>
+    <script>
+      const numeros = prompt("Dona una llista de nombres").split().map(num => parseInt(num));
+      let cadena_final = '';
+      let cantidad_ceros = 0;
+      
+      for (const i of numeros) {
+        if (i !== 0) {
+          cadena_final += i.toString();
+        } else {
+          cantidad_ceros++;
+        }
+      }
+      
+      document.write(cadena_final + '0'.repeat(cantidad_ceros));
+      
+    </script>
+    <div>
+      <a href="ex1.py"></a>
+    </div>
+</body>
+</html>
